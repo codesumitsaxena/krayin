@@ -38,14 +38,14 @@ A powerful WhatsApp AI automation that can be deployed for **multiple clients** 
 
 ## ⚙️ How It Works
 
-![Admin Panel](./vite-project/src//assets/Admin.png)
+![Admin Panel](./src/assets/Admin.png)
 
 1. **Admin Panel** → Configure each client's WhatsApp credentials
 2. **n8n Workflow** → Central automation engine processes all messages
 3. **AI Agent** → Provides intelligent responses based on business type
 4. **WhatsApp API** → Sends/receives messages for each client
 
-![n8n Workflow](./vite-project/src/assets/workflow.png)
+![n8n Workflow](./src/assets/workflow.png)
 
 ---
 
