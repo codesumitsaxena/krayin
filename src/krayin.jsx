@@ -18,8 +18,8 @@ const WhatsAppAdminPanel = () => {
     appId: '',
     appSecret: '',
     businessAccountId: '',
-    phoneNumberId: '926687467194699',
-    testPhoneNumber: '918953984969'
+    phoneNumberId: '',
+    testPhoneNumber: ''
   });
   
   const messagesEndRef = useRef(null);
@@ -27,7 +27,7 @@ const WhatsAppAdminPanel = () => {
   const pendingMessagesRef = useRef(new Map());
   
   const ADMIN_PASSWORD = 'admin123';
-  const WEBHOOK_URL = 'https://n8n.avertisystems.com/webhook/whatsapp-webhook';
+  const WEBHOOK_URL = 'https://n8n.avertisystems.com/webhook-test/whatsapp-webhook';
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -436,7 +436,7 @@ const WhatsAppAdminPanel = () => {
                       value={credentials.appId}
                       onChange={(e) => handleCredentialChange('appId', e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none font-mono text-sm"
-                      placeholder="1212797771048615"
+                      placeholder="121279*****048615"
                     />
                   </div>
 
@@ -462,7 +462,7 @@ const WhatsAppAdminPanel = () => {
                       value={credentials.businessAccountId}
                       onChange={(e) => handleCredentialChange('businessAccountId', e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none font-mono text-sm"
-                      placeholder="1571973883717819"
+                      placeholder="15***************"
                     />
                   </div>
 
@@ -476,7 +476,7 @@ const WhatsAppAdminPanel = () => {
                         value={credentials.phoneNumberId}
                         onChange={(e) => handleCredentialChange('phoneNumberId', e.target.value)}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none font-mono text-sm"
-                        placeholder="926687467194699"
+                        placeholder="***87467194699"
                       />
                     </div>
 
@@ -489,7 +489,7 @@ const WhatsAppAdminPanel = () => {
                         value={credentials.testPhoneNumber}
                         onChange={(e) => handleCredentialChange('testPhoneNumber', e.target.value)}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none font-mono text-sm"
-                        placeholder="918953984969"
+                        placeholder="918953******"
                       />
                     </div>
                   </div>
